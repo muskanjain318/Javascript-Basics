@@ -1,0 +1,19 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+//Concept of object de-structuring, reduce function, map function, for loop, array of object
+
+console.log("Try programiz.pro");
+let people = [
+    {name:"muskan",age:20},{name:"anjali",age:52}];
+    console.log(people);
+    for(let i=0;i<people.length;i++){
+        console.log(people[i]);
+        console.log(people[i].age)
+       let total = people.reduce((sum,number) => sum+number.age,0);
+       console.log(total)
+    }
+    
+    let person = people.map( ({name,age},index) => {
+        console.log(`${index+1} name is ${name} age is ${age}`)
+    })
+    
